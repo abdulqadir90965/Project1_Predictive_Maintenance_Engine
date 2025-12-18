@@ -6,10 +6,10 @@ Unplanned equipment failures in large manufacturing facilities can result in sig
 This project implements an end-to-end predictive maintenance system that forecasts equipment failure risk 24 hours in advance using time-series sensor data from industrial robotic arms.
 
 The system is designed to:
-:- Detect early signs of degradation
-:-Enable proactive, scheduled maintenance
-:-Reduce unplanned downtime
-:-Provide explainable predictions engineers can trust
+* Detect early signs of degradation
+* Enable proactive, scheduled maintenance
+* Reduce unplanned downtime
+* Provide explainable predictions engineers can trust
 
 🏭 Use Case Context
 
@@ -31,13 +31,14 @@ The system is designed to:
 2. Feature Engineering (Core Component)
 
 * Failures are driven by temporal trends, not single readings.
-* To capture this, the following features are engineered:
+  
+2.1. To capture this, the following features are engineered:
 
-:- Lag Features
+* Lag Features
 
    Previous sensor values (t-1, t-2)
 
-:- Rolling Window Statistics
+* Rolling Window Statistics
 
    Rolling means over short and medium windows
 
