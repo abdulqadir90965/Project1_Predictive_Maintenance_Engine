@@ -42,4 +42,22 @@ The system is designed to:
 
    Rolling means over short and medium windows
 
-   All transformations are grouped by Sensor_ID to prevent cross-machine leakage
+All transformations are grouped by Sensor_ID to prevent cross-machine leakage
+
+3. Failure Labeling
+
+* Since real maintenance logs were not available, a proxy failure label was created:
+
+* A machine is flagged as at-risk if vibration or temperature exceeds the 90th percentile
+
+⚠️ Note: In production, failure labels should be derived from actual maintenance and breakdown records.
+
+4. Train–Test Split Strategy
+
+* Uses a time-based split (80% past data for training, 20% future data for testing)
+
+* Prevents data leakage
+
+* Accurately simulates real-world deployment conditions
+
+
