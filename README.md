@@ -60,4 +60,34 @@ All transformations are grouped by Sensor_ID to prevent cross-machine leakage
 
 * Accurately simulates real-world deployment conditions
 
+🤖 Modeling Strategy
+
+A layered modeling approach was used:
+
+1. Baseline Model :-
+   
+Logistic Regression
+
+* Interpretable
+
+* Serves as a performance benchmark
+
+* Uses class weighting to address imbalance
+
+2. Advanced Models :-
+
+Random Forest
+
+* Captures non-linear sensor interactions
+
+* Robust to noisy industrial data
+
+XGBoost
+
+* High-performance gradient boosting model
+
+* Handles severe class imbalance using scale_pos_weight
+
+Hyperparameter tuning is performed using RandomizedSearchCV with ROC-AUC as the primary metric.
+
 
