@@ -90,4 +90,69 @@ XGBoost
 
 Hyperparameter tuning is performed using RandomizedSearchCV with ROC-AUC as the primary metric.
 
+Hyperparameter tuning is performed using RandomizedSearchCV with ROC-AUC as the primary metric.
+
+📊 Evaluation Metrics
+
+Given the rare failure rate, accuracy is avoided.
+Instead, models are evaluated using:
+
+ROC-AUC
+
+Precision / Recall
+
+Failure detection rate on future data
+
+🔍 Explainable AI (XAI)
+
+To ensure trust and adoption by maintenance engineers:
+
+SHAP (SHapley Additive exPlanations) is used
+
+Provides:
+
+Global feature importance
+
+Local explanations for individual machines
+
+Example explanation:
+
+“This robotic arm was flagged due to rising 6-hour vibration average and sustained high temperature.”
+
+🏗️ Production Architecture (High-Level)
+Sensor Streams
+   │
+   ▼
+Data Ingestion Layer
+   │
+   ▼
+Data Cleaning & Time Alignment
+   │
+   ▼
+Feature Engineering
+(Lag + Rolling Statistics)
+   │
+   ▼
+ML Models
+(Logistic Regression → RF → XGBoost)
+   │
+   ▼
+Explainability (SHAP)
+   │
+   ▼
+Maintenance Dashboard & Alerts
+
+🛠️ Tech Stack
+
+Languages: Python
+
+Data Processing: Pandas, NumPy
+
+Visualization: Matplotlib, Seaborn
+
+Modeling: Scikit-learn, XGBoost
+
+Explainability: SHAP
+
+
 
