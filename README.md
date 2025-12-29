@@ -92,16 +92,18 @@ Hyperparameter tuning is performed using RandomizedSearchCV with ROC-AUC as the 
 
 Hyperparameter tuning is performed using RandomizedSearchCV with ROC-AUC as the primary metric.
 
+
 📊 Evaluation Metrics
 
 Given the rare failure rate, accuracy is avoided.
+
 Instead, models are evaluated using:
 
-ROC-AUC
+* ROC-AUC
 
-Precision / Recall
+* Precision / Recall
 
-Failure detection rate on future data
+* Failure detection rate on future data
 
 🔍 Explainable AI (XAI)
 
@@ -111,9 +113,9 @@ SHAP (SHapley Additive exPlanations) is used
 
 Provides:
 
-Global feature importance
+* Global feature importance
 
-Local explanations for individual machines
+* Local explanations for individual machines
 
 Example explanation:
 
