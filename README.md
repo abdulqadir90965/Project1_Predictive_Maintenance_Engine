@@ -156,5 +156,31 @@ Modeling: Scikit-learn, XGBoost
 
 Explainability: SHAP
 
+🚀 Key Outcomes
+
+Successfully identified high-risk machines ahead of failure
+
+Demonstrated strong performance on imbalanced time-series data
+
+Delivered explainable predictions suitable for real-world maintenance teams
+
+Designed with production constraints and scalability in mind
+
+📌 Future Improvements
+
+Integrate real maintenance and failure logs
+
+Add pressure and additional sensor channels
+
+Implement streaming inference (Kafka / Spark)
+
+Add automated alert thresholds and feedback loop
+
+Monitor concept drift over time
+
+👤 Author
+
+Abdul Qadir
+Predictive Maintenance | Machine Learning | Industrial Analytics
 
 
