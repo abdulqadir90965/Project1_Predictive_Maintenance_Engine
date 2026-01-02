@@ -122,6 +122,7 @@ Example explanation:
 “This robotic arm was flagged due to rising 6-hour vibration average and sustained high temperature.”
 
 🏗️ Production Architecture (High-Level)
+
 Sensor Streams
    │
    ▼
