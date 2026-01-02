@@ -158,25 +158,25 @@ Explainability: SHAP
 
 🚀 Key Outcomes
 
-Successfully identified high-risk machines ahead of failure
+* Successfully identified high-risk machines ahead of failure
 
-Demonstrated strong performance on imbalanced time-series data
+* Demonstrated strong performance on imbalanced time-series data
 
-Delivered explainable predictions suitable for real-world maintenance teams
+* Delivered explainable predictions suitable for real-world maintenance teams
 
-Designed with production constraints and scalability in mind
+* Designed with production constraints and scalability in mind
 
 📌 Future Improvements
 
-Integrate real maintenance and failure logs
+* Integrate real maintenance and failure logs
 
-Add pressure and additional sensor channels
+* Add pressure and additional sensor channels
 
-Implement streaming inference (Kafka / Spark)
+* Implement streaming inference (Kafka / Spark)
 
-Add automated alert thresholds and feedback loop
+* Add automated alert thresholds and feedback loop
 
-Monitor concept drift over time
+* Monitor concept drift over time
 
 👤 Author
 
